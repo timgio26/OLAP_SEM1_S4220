@@ -1,0 +1,176 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0069bfb9-68e7-456a-96c0-0fda1a159a6d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Learning</ID>
+  <Name>Learning</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Learning</DataSourceID>
+  <Schema>
+    <xs:schema id="Learning" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Learning" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="a41b7bf1-4910-4786-a2b8-703ae1c1d2de">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_study_fact" msprop:DbTableName="study_fact" msprop:FriendlyName="study_fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c48cb1f6-4d65-4224-9cf8-073f3b5eaf7c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_time" msprop:FriendlyName="id_time" msprop:DbColumnName="id_time" msprop:design-time-name="882dc4de-ddbf-47c9-a162-6433c0be73f7" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_country" msprop:FriendlyName="id_country" msprop:DbColumnName="id_country" msprop:design-time-name="ab404c71-04b7-4ead-8cf8-adbf0fc10b90" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_level" msprop:FriendlyName="id_level" msprop:DbColumnName="id_level" msprop:design-time-name="5b3000bf-3371-427b-b81d-3a1931fff0a6" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_subject" msprop:FriendlyName="id_subject" msprop:DbColumnName="id_subject" msprop:design-time-name="c81f7d8a-bca4-4140-8618-022ae7ab1c48" type="xs:int" minOccurs="0" />
+                  <xs:element name="id_gender" msprop:FriendlyName="id_gender" msprop:DbColumnName="id_gender" msprop:design-time-name="abfe6fe4-779d-4458-9478-a4e599323666" type="xs:int" minOccurs="0" />
+                  <xs:element name="measure" msprop:FriendlyName="measure" msprop:DbColumnName="measure" msprop:design-time-name="ba26cf9e-1f86-42d4-ad28-ef48c730cfa1" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_study_level" msprop:DbTableName="study_level" msprop:FriendlyName="study_level" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6bc6b275-ba7a-467a-81fa-3a63be5c61a3">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_level" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_level" msprop:DbColumnName="id_level" msprop:design-time-name="f9c70fe6-c1e3-406c-8da0-54e5e71d50f4" type="xs:int" />
+                  <xs:element name="level" msprop:FriendlyName="level" msprop:DbColumnName="level" msprop:design-time-name="33ce88c8-dab5-4fa2-a160-881fcebf6485" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_study_country" msprop:DbTableName="study_country" msprop:FriendlyName="study_country" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="e141947c-8bc4-4949-942f-8f4786e491db">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_country" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_country" msprop:DbColumnName="id_country" msprop:design-time-name="95e496d1-f760-4d4b-8f32-199b1235f530" type="xs:int" />
+                  <xs:element name="country_name" msprop:FriendlyName="country_name" msprop:DbColumnName="country_name" msprop:design-time-name="a66e9ef6-debd-44a1-abad-03408a60965f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_study_gender" msprop:DbTableName="study_gender" msprop:FriendlyName="study_gender" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="472cd4ab-ae46-4df2-b59d-6cfb7dee9453">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_gender" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_gender" msprop:DbColumnName="id_gender" msprop:design-time-name="f71d7b9a-fa31-400d-99e1-65e166e0bfb7" type="xs:int" />
+                  <xs:element name="gender" msprop:FriendlyName="gender" msprop:DbColumnName="gender" msprop:design-time-name="7203aabb-1ffc-4cee-96e0-8d155a33ff5c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_study_time" msprop:DbTableName="study_time" msprop:FriendlyName="study_time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="49614660-de30-4b81-8a3a-eb7eeb7ca5c6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_time" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_time" msprop:DbColumnName="id_time" msprop:design-time-name="7bbe1017-df38-4b53-9e06-19935848b337" type="xs:int" />
+                  <xs:element name="year" msprop:FriendlyName="year" msprop:DbColumnName="year" msprop:design-time-name="c299dc23-96ef-4b55-a6f3-ed0787750f4f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_study_subject" msprop:DbTableName="study_subject" msprop:FriendlyName="study_subject" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1caef655-df27-4bee-9515-55b9fd795e6b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id_subject" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="id_subject" msprop:DbColumnName="id_subject" msprop:design-time-name="0d67f2b2-6c98-45c9-91b5-58d9544261b7" type="xs:int" />
+                  <xs:element name="subject_name" msprop:FriendlyName="subject_name" msprop:DbColumnName="subject_name" msprop:design-time-name="c8940e55-fc4a-4552-8924-9f3de4e88e55" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_study_level" />
+          <xs:field xpath="id_level" />
+        </xs:unique>
+        <xs:unique name="dbo_study_country_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_study_country" />
+          <xs:field xpath="id_country" />
+        </xs:unique>
+        <xs:unique name="dbo_study_gender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_study_gender" />
+          <xs:field xpath="id_gender" />
+        </xs:unique>
+        <xs:unique name="dbo_study_time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_study_time" />
+          <xs:field xpath="id_time" />
+        </xs:unique>
+        <xs:unique name="dbo_study_subject_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_study_subject" />
+          <xs:field xpath="id_subject" />
+        </xs:unique>
+        <xs:keyref name="FK__study_fac__id_su__7C4F7684" refer="dbo_study_subject_Constraint1">
+          <xs:selector xpath=".//dbo_study_fact" />
+          <xs:field xpath="id_subject" />
+        </xs:keyref>
+        <xs:keyref name="FK__study_fac__id_co__7A672E12" refer="dbo_study_country_Constraint1">
+          <xs:selector xpath=".//dbo_study_fact" />
+          <xs:field xpath="id_country" />
+        </xs:keyref>
+        <xs:keyref name="FK__study_fac__id_le__7B5B524B" refer="Constraint1">
+          <xs:selector xpath=".//dbo_study_fact" />
+          <xs:field xpath="id_level" />
+        </xs:keyref>
+        <xs:keyref name="FK__study_fac__id_ti__797309D9" refer="dbo_study_time_Constraint1">
+          <xs:selector xpath=".//dbo_study_fact" />
+          <xs:field xpath="id_time" />
+        </xs:keyref>
+        <xs:keyref name="FK__study_fac__id_ge__7D439ABD" refer="dbo_study_gender_Constraint1">
+          <xs:selector xpath=".//dbo_study_fact" />
+          <xs:field xpath="id_gender" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Learning xmlns="" />
+  </Schema>
+</DataSourceView>
